@@ -1,0 +1,160 @@
+/*
+
+Theme Name:		Municipality Of Beitbridge Website
+Author:			LabCyberSec
+Version: 		21/01
+
+*/
+
+
+/*================================================
+How It's Work Area CSS
+=================================================*/
+.how-its-work-area {
+  background-color: var(--blackColor);
+}
+
+.how-its-work-content .sub-title {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--mainColor);
+  text-transform: uppercase;
+  font-size: 15.5px;
+  font-weight: 700;
+}
+
+.how-its-work-content h2 {
+  margin-bottom: 15px;
+  font-size: 42px;
+  color: var(--whiteColor);
+}
+
+.how-its-work-content p {
+  color: #e1e1e1;
+}
+
+.how-its-work-content .inner-box {
+  margin-top: 35px;
+}
+
+.how-its-work-content .inner-box .single-item {
+  position: relative;
+  z-index: 1;
+  padding-left: 100px;
+  padding-bottom: 30px;
+}
+
+.how-its-work-content .inner-box .single-item .count-box {
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  line-height: 65px;
+  text-align: center;
+  color: var(--whiteColor);
+  border-radius: 50%;
+  background-color: var(--blackColor);
+  -webkit-box-shadow: #edf1fe 0 0 0 5px;
+          box-shadow: #edf1fe 0 0 0 5px;
+  font-size: 30px;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.how-its-work-content .inner-box .single-item h3 {
+  margin-bottom: 8px;
+  color: var(--whiteColor);
+  font-size: 25px;
+}
+
+.how-its-work-content .inner-box .single-item::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  width: 1px;
+  height: 100%;
+  background-color: var(--whiteColor);
+  z-index: -1;
+  left: 40px;
+}
+
+.how-its-work-content .inner-box .single-item::after {
+  content: "\ea17";
+  position: absolute;
+  left: 26px;
+  color: var(--whiteColor);
+  bottom: 10px;
+  -webkit-animation: fade-down 1.5s infinite linear;
+          animation: fade-down 1.5s infinite linear;
+  font-family: "boxicons" !important;
+  font-size: 30px;
+}
+
+.how-its-work-content .inner-box .single-item:last-child {
+  padding-bottom: 0;
+}
+
+.how-its-work-content .inner-box .single-item:last-child::before {
+  display: none;
+}
+
+.how-its-work-content .inner-box .single-item:last-child::after {
+  display: none;
+}
+
+.how-its-work-image {
+  text-align: center;
+}
+
+
+
+.report-row{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-wrap:wrap;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center
+}
+.report-row .report-row-box{
+  -webkit-box-flex:0;
+  -ms-flex:0 0 20%;
+  flex:0 0 20%;
+  max-width:20%
+}
+.report-row .report-row-middle{
+  -webkit-box-flex:0;
+  -ms-flex:0 0 60%;
+  flex:0 0 60%;
+  max-width:60%;
+  position:relative
+}
+.report-row .report-row-middle:after{
+  content:'';
+  top:50%;
+  width:1px;
+  background:#333;
+  transform:translateY(-50%);
+  height:117px;
+  right:0;
+  position:absolute
+}
+.report-row-middle h5{margin-bottom:5px;color:#130F6D;position:relative;font-size:20px}
+.report-row-middle a{display:block;text-decoration:none;margin-bottom:5px;color:#130F6D;font-size:1.4em}
+.report-row .report-row-middle p{margin:0;padding-right:20px}
+.report-row{padding:20px 0;border-bottom:1px solid #333}
+.report-row:last-child{border:none}
+@media (max-width: 767px){
+  .report-row-box.text-center.report-button{
+    max-width:100%;width:100%;flex:1;margin-top:5px
+  }
+}
+.report-btn{width:70%;margin:0 auto}
+.report-btn a{color:#fff;background-color:#130F6D;border-color:#130F6D;border-radius:7px 7px 7px 7px;padding:10px;text-transform:uppercase;font-weight:400;letter-spacing:2px;display:block}
+.report-btn a:hover{background:#2F2F2F;color:#fff;border-color:#130F6D;text-decoration:none}
+
+div.elementskit-megamenu-panel{
+	width:50px;
+}

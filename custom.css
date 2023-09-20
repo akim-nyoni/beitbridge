@@ -1,0 +1,91 @@
+
+/*Custom Hero Banner*/
+.hero-banner-four{margin:135px 0 -100px;position:relative;background:#161616;z-index:5}
+.hero_slider_two .content-wrapper{position:relative}
+.hero_slider_two .hero-img{
+	width:100%;
+	min-height:800px;
+	height:calc(100vh - 135px);
+	object-fit:cover;
+	object-position:top center
+}
+.hero_slider_two .slider-inner{
+	position:absolute;
+	width:620px;
+	right:80px;
+	bottom:0;
+	padding:70px 15px 50px 80px
+}
+.hero_slider_two .slider-inner:before{
+	content:'';
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	mix-blend-mode:multiply;
+	background-color:#eb0000
+}
+.hero_slider_two .hero-content .video-icon{
+	width:70px;
+	height:70px;
+	border-radius:50%;
+	background:var(--heading);
+	padding-right:5px;
+	position:relative;
+	animation:ripple 3s linear infinite
+}
+.hero_slider_two .hero-content .video-icon::after,
+.hero_slider_two .hero-content .video-icon::before{
+	content:"";
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	border-radius:50%;
+	animation:inherit;
+	animation-delay:1s
+}
+.hero_slider_two .hero-content .video-icon::after{animation-delay:3s}
+@keyframes ripple{0%{box-shadow:0 0 0 .1rem rgba(0,0,0,.08)}100%{box-shadow:0 0 0 3rem transparent}}
+.hero_slider_two .hero-content .hero-heading{
+	font-family:gorditabold;
+	font-size:85px;
+	line-height:1.1em;
+	color:#fff;
+	padding:40px 0 40px;
+	margin-bottom:0
+}
+.hero_slider_two .hero-content .hero-sub-heading{
+	font-size:22px;
+	line-height:1.75em;
+	color:#fff;
+	padding:0 60px 40px 0
+}
+.hero_slider_two .hero-content .theme-btn-one{width:200px}
+@-webkit-keyframes fadeInUpSD{
+	0%{
+		opacity:0;
+		-webkit-transform:translateY(100px);
+		transform:translateY(100px)
+	}
+	100%{
+		opacity:1;
+		-webkit-transform:none;
+		transform:none
+	}
+}
+@keyframes fadeInUpSD{
+	0%{
+		opacity:0;
+		-webkit-transform:translateX(100px);
+		transform:translateX(100px)
+	}
+	100%{opacity:1;
+		-webkit-transform:none;
+		transform:none
+	}
+}
+.hero_slider_two .slick-active .hero-content{animation-name:fadeInUpSD;animation-duration:1s}
+
